@@ -33,7 +33,7 @@ class App extends React.Component {
 
     console.log(data);
 
-    axios.post('https://mailsender26.herokuapp.com/contact/send', data)
+    axios.post('http://mailsender26.herokuapp.com/contact/send', data)
       .then(res => {
         console.log("sent data", res);
         if (res) {
